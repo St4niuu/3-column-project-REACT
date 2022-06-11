@@ -41,9 +41,9 @@ body
     height: 30rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: baseline;
-    gap: 2.5rem;
-    padding: 2.5rem 2rem;
+    padding: 3rem 2.5rem;
     color: white;
     button
     {
@@ -86,5 +86,10 @@ body
     {
         flex-direction: column;
         justify-content: flex-start !important;
+        height: fit-content !important;
+    }
+    .column
+    {
+        min-height: 30rem;
     }
 }

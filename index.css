@@ -37,11 +37,13 @@ body #root {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  gap: 2.5rem;
-  padding: 2.5rem 2rem;
+  padding: 3rem 2.5rem;
   color: white;
 }
 
@@ -87,6 +89,12 @@ body #root {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .column {
+    min-height: 30rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
