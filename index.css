@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body #root {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.column {
+  width: 20rem;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 2.5rem;
+  padding: 2.5rem 2rem;
+  color: white;
+}
+
+.column button {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-weight: 700;
+}
+
+.column:nth-child(1) {
+  background-color: #e38826;
+}
+
+.column:nth-child(1) button {
+  color: #e38826;
+}
+
+.column:nth-child(2) {
+  background-color: #006970;
+}
+
+.column:nth-child(2) button {
+  color: #006970;
+}
+
+.column:nth-child(3) {
+  background-color: #004241;
+}
+
+.column:nth-child(3) button {
+  color: #004241;
+}
+
+@media only screen and (max-width: 600px) {
+  #root {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
